@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second-hand Electrical Appliances & Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        /* ✅ ปรับ Navbar ให้หรูและลอย */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(33, 37, 41, 0.97);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+        }
+
+        .brand-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-area img {
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+
+        .brand-text {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #0d6efd !important;
+        }
+
+        .form-control-dark {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .navbar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* การ์ดสินค้า */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ✅ Navbar -->
+    <header>
+        <div class="container-fluid px-4 navbar-container">
+            <a href="index.php" class="brand-area text-decoration-none">
+                <img src="images/553880555_1541678730478226_8110766102121587378_n.jpg" alt="Logo">
+                <span class="brand-text">SECOND-HAND ELECTRICAL</span>
+            </a>
+
+            <ul class="nav mx-auto">
+                <li><a href="#" class="nav-link text-secondary">Home</a></li>
+                <li><a href="#" class="nav-link">Features</a></li>
+                <li><a href="#" class="nav-link">Pricing</a></li>
+                <li><a href="#" class="nav-link">FAQs</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+            </ul>
+
+            <form class="d-flex me-3">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+
+            <a href="cart.php" class="btn btn-outline-light position-relative me-3">
+                <i class="bi bi-cart-fill"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    3
+                </span>
+            </a>
+
+            <div class="text-end">
+                <a href="login.php" class="btn btn-outline-light me-2">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- หัวข้อหลัก -->
+    <h1 class="text-center my-5 text-primary font-weight-bold display-4"
+        style="letter-spacing: 3px;
+               text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+               background-color: #e9f7fe;
+               padding: 20px;
+               border-radius: 15px;
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+               width: fit-content;
+               margin: 0 auto;
+               border: 3px solid rgb(30, 9, 70);">
+        SECOND-HAND ELECTRICAL APPLIANCES & TOOLS
+    </h1>
+
+    <!-- แสดงสินค้า -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- ✅ สินค้า 1 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/e9i0s3.jpg" class="card-img-top" alt="Electric Drill">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องดูดฝุ่น</h5>
+                        <p class="card-text text-success fw-bold">$35</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ดาวน์โหลด.jpg" class="card-img-top" alt="Rice Cooker">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ไมโครเวฟ</h5>
+                        <p class="card-text text-success fw-bold">$20</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 3 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/10-Washing-Machine_Longform-July_Desktop7-1200x1200.jpg" class="card-img-top" alt="Hair Dryer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องซักผ้า</h5>
+                        <p class="card-text text-success fw-bold">$15</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 4 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ตู้เย็น-MULTI-DOOR-MITSUBISHI-MR-LA65ES-GDS-20.5-คิว-กระจกเทาเข้ม-1.jpg" class="card-img-top" alt="Angle Grinder">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ตู้เย็น</h5>
+                        <p class="card-text text-success fw-bold">$40</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/e9i0s3.jpg" class="card-img-top" alt="Electric Drill">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องดูดฝุ่น</h5>
+                        <p class="card-text text-success fw-bold">$35</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ดาวน์โหลด.jpg" class="card-img-top" alt="Rice Cooker">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ไมโครเวฟ</h5>
+                        <p class="card-text text-success fw-bold">$20</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 3 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/10-Washing-Machine_Longform-July_Desktop7-1200x1200.jpg" class="card-img-top" alt="Hair Dryer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องซักผ้า</h5>
+                        <p class="card-text text-success fw-bold">$15</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 4 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ตู้เย็น-MULTI-DOOR-MITSUBISHI-MR-LA65ES-GDS-20.5-คิว-กระจกเทาเข้ม-1.jpg" class="card-img-top" alt="Angle Grinder">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ตู้เย็น</h5>
+                        <p class="card-text text-success fw-bold">$40</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/e9i0s3.jpg" class="card-img-top" alt="Electric Drill">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องดูดฝุ่น</h5>
+                        <p class="card-text text-success fw-bold">$35</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ดาวน์โหลด.jpg" class="card-img-top" alt="Rice Cooker">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ไมโครเวฟ</h5>
+                        <p class="card-text text-success fw-bold">$20</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 3 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/10-Washing-Machine_Longform-July_Desktop7-1200x1200.jpg" class="card-img-top" alt="Hair Dryer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องซักผ้า</h5>
+                        <p class="card-text text-success fw-bold">$15</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 4 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ตู้เย็น-MULTI-DOOR-MITSUBISHI-MR-LA65ES-GDS-20.5-คิว-กระจกเทาเข้ม-1.jpg" class="card-img-top" alt="Angle Grinder">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ตู้เย็น</h5>
+                        <p class="card-text text-success fw-bold">$40</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/e9i0s3.jpg" class="card-img-top" alt="Electric Drill">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องดูดฝุ่น</h5>
+                        <p class="card-text text-success fw-bold">$35</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ดาวน์โหลด.jpg" class="card-img-top" alt="Rice Cooker">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ไมโครเวฟ</h5>
+                        <p class="card-text text-success fw-bold">$20</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 3 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/10-Washing-Machine_Longform-July_Desktop7-1200x1200.jpg" class="card-img-top" alt="Hair Dryer">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">เครื่องซักผ้า</h5>
+                        <p class="card-text text-success fw-bold">$15</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ สินค้า 4 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./images/ตู้เย็น-MULTI-DOOR-MITSUBISHI-MR-LA65ES-GDS-20.5-คิว-กระจกเทาเข้ม-1.jpg" class="card-img-top" alt="Angle Grinder">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">ตู้เย็น</h5>
+                        <p class="card-text text-success fw-bold">$40</p>
+                        <button class="btn btn-primary w-100"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
